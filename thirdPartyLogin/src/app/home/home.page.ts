@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import '@pwabuilder/pwaauth';
 
 @Component({
   selector: 'app-home',
