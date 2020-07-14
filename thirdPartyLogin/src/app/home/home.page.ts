@@ -11,12 +11,11 @@ export class HomePage {
   @ViewChild('pwaAuthElement') pwaAuthElement: ElementRef;
 
   ionViewDidEnter(){
-    debugger
     this.pwaAuthElement.nativeElement.addEventListener("signin-completed", (e: CustomEvent) => {
     if (!e.detail.error) {
       const signIn = e.detail;
       
-      console.log("Email: ", signIn.email);
+      // console.log("Email: ", signIn.email);
       console.log("Name: ", signIn.name);
       console.log("Picture: ", signIn.imageUrl);
       console.log("Access token", signIn.accessToken);
